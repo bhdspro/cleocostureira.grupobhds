@@ -45,39 +45,42 @@ const INTERVALO_CACHE_MS = 172800000; // 48 horas
 async function atualizarDadosGoogle() {
     console.log("🕵️ Iniciando robô invisível para Scraping do Google...");
     try {
-        // Usamos &gl=br para forçar resultados do Brasil
-        const searchUrl = 'https://www.google.com/search?q=Cl%C3%A9o+Costureira+Vivi+Xavier+Londrina&hl=pt-BR&gl=br';
+        // Mudamos a tática: Usamos a URL do Google Maps em vez da busca normal
+        const searchUrl = 'https://www.google.com/maps/search/Cl%C3%A9o+Costureira+Vivi+Xavier+Londrina/?hl=pt-BR';
         
         const response = await axios.get(searchUrl, {
             headers: {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
                 'Accept-Language': 'pt-BR,pt;q=0.9',
-                // PULO DO GATO: Passamos um cookie falso afirmando que já aceitamos os termos de LGPD/Privacidade do Google
                 'Cookie': 'CONSENT=YES+cb.20230101-01-p0.pt-BR+FX+999;'
             },
-            timeout: 10000 // Desiste se demorar mais de 10s
+            timeout: 10000
         });
 
-        const $ = cheerio.load(response.data);
-        const textHtml = $('body').text(); // Pega todo o texto da página de uma vez
+        // Pegamos o HTML puro e bruto (onde ficam escondidos os dados do Google Maps)
+        const rawHtml = response.data;
         
         let nota = null;
         let total = null;
 
-        // ESTRATÉGIA DE REGEX: Procuramos por padrões de fala do Google, não por código HTML
+        // ESTRATÉGIA DE REGEX PROFUNDO: Procura os números escondidos nos arrays de configuração do Google
+        // Geralmente o Google Maps cospe algo como: [null,null,5.0,14]
         
-        // 1. Tenta achar a nota (Padrão: "Classificação 4,9 de 5" ou "4,9 estrelas")
-        const regexNota = /Classificação (\d[.,]\d) de 5/i;
-        const regexNotaAlt = /(\d[.,]\d)\s+estrelas/i;
+        // Caçando o padrão de estrelas (ex: 5,0 estrelas ou 4,9 estrelas dentro dos metadados)
+        const regexNota = /\\?"?ratingValue\\?"?\s*:\s*\\?"?(\d[.,]\d)\\?"?/i;
+        const regexNotaTexto = /([\d,.]+)\s*estrelas?/i;
         
-        const matchNota = textHtml.match(regexNota) || textHtml.match(regexNotaAlt);
+        const matchNota = rawHtml.match(regexNota) || rawHtml.match(regexNotaTexto);
         if (matchNota) {
             nota = parseFloat(matchNota[1].replace(',', '.'));
         }
 
-        // 2. Tenta achar o total de avaliações (Padrão: "14 comentários" ou "14 avaliações")
-        const regexTotal = /(\d+)\s+(comentários|avaliações)/i;
-        const matchTotal = textHtml.match(regexTotal);
+        // Caçando o padrão de total de reviews
+        const regexTotal = /\\?"?reviewCount\\?"?\s*:\s*\\?"?(\d+)\\?"?/i;
+        const regexTotalTexto = /(\d+)\s*avaliações?/i;
+        const regexTotalComentarios = /(\d+)\s*comentários?/i;
+
+        const matchTotal = rawHtml.match(regexTotal) || rawHtml.match(regexTotalTexto) || rawHtml.match(regexTotalComentarios);
         if (matchTotal) {
             total = parseInt(matchTotal[1]);
         }
@@ -87,13 +90,13 @@ async function atualizarDadosGoogle() {
             dadosGoogle.rating_geral = nota;
             dadosGoogle.total_avaliacoes = total;
             ultimaAtualizacao = Date.now(); 
-            console.log(`✅ Scraping concluído com SUCESSO! Nota: ${nota} | Avaliações: ${total}`);
+            console.log(`✅ Scraping de Código-Fonte concluído com SUCESSO! Nota: ${nota} | Avaliações: ${total}`);
         } else {
-            console.warn("⚠️ O robô burlou o bloqueio, mas os números não estavam no texto da página. Mantendo Cache.");
+            console.warn("⚠️ O robô leu o código-fonte, mas o painel da Cléo não foi renderizado para este servidor. Mantendo Cache Antigo (Isso é normal e seguro).");
         }
 
     } catch (error) {
-        console.error("⚠️ O Google bloqueou a conexão do servidor (Captcha). Mantendo Cache Antigo.", error.message);
+        console.error("⚠️ O Google cortou a conexão. Mantendo Cache Antigo.", error.message);
     }
 }
 
@@ -103,17 +106,17 @@ async function atualizarDadosGoogle() {
 app.get('/api/google-data', async (req, res) => {
     const tempoAtual = Date.now();
 
+    // Se passou 48h, manda o robô tentar atualizar silenciosamente no fundo
     if (tempoAtual - ultimaAtualizacao > INTERVALO_CACHE_MS) {
-        // Dispara o robô para atualizar em segundo plano
         atualizarDadosGoogle(); 
     } else {
-        console.log("⚡ Servindo dados do Cache de 48h.");
+        console.log("⚡ Servindo dados do Cache Seguro.");
     }
 
     res.json(dadosGoogle);
 });
 
-// Health check para o Render
+// Health check
 app.get('/', (req, res) => {
     res.json({ message: 'Robô de Scraping operando e protegido!' });
 });
@@ -121,5 +124,5 @@ app.get('/', (req, res) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`✅ Servidor rodando na porta ${PORT}`);
-    atualizarDadosGoogle();
+    atualizarDadosGoogle(); // Faz a primeira tentativa ao ligar
 });
