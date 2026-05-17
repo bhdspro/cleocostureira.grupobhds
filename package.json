@@ -1,7 +1,7 @@
 {
 "name": "api-cleo-costureira",
 "version": "1.0.0",
-"description": "Backend integrado com Google Places e Instagram para o site da Cléo Costureira",
+"description": "Backend com Web Scraping para o site da Cléo Costureira",
 "main": "server.js",
 "scripts": {
 "start": "node server.js",
@@ -10,15 +10,15 @@
 "keywords": [
 "api",
 "express",
-"costureira",
-"backend"
+"scraping",
+"cheerio"
 ],
 "author": "Cléo Costureira / Desenvolvedor",
 "license": "ISC",
 "dependencies": {
 "axios": "^1.6.0",
+"cheerio": "^1.0.0-rc.12",
 "cors": "^2.8.5",
-"dotenv": "^16.4.5",
 "express": "^4.19.0"
 }
 }
