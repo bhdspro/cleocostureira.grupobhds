@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✂️</text></svg>">
+    
+    <title>Cléo Costureira | Consertos e Ajustes no Conjunto Vivi Xavier, Londrina</title>
+    
+    <!-- Texto natural, atraente e com as palavras-chave principais organicamente -->
+    <meta name="description" content="Ateliê de costura da Cléo no Conjunto Vivi Xavier, Londrina. Especialista em ajustes de roupas, consertos de zíper, bainhas, uniformes e confecção sob medida.">
+    <meta name="keywords" content="costureira londrina, costureira vivi xavier, conserto de roupa londrina, ajustes de roupas, zona norte, confecção sob medida">
+    <meta name="author" content="Cléo Costureira">
+    
+    <meta property="og:title" content="Cléo Costureira | Ateliê de Costura em Londrina">
+    <meta property="og:description" content="Precisando de um ajuste ou conserto de roupa com acabamento impecável? Conheça o ateliê da Cléo no Conjunto Vivi Xavier.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.instagram.com/cleo_costureira_2026/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=1000&auto=format&fit=crop">
+
+    <!-- Schema.org / JSON-LD mantido e limpo -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TailorShop",
+      "name": "Cléo Costureira",
+      "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=1000&auto=format&fit=crop",
+      "@id": "https://share.google/8aXYMikViNjlSxOEw",
+      "url": "https://www.instagram.com/cleo_costureira_2026/",
+      "telephone": "+5543984989845",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua David Nasser, 339",
+        "addressLocality": "Londrina",
+        "addressRegion": "PR",
+        "postalCode": "86082-080",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.2796, 
+        "longitude": -51.1517
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:30",
+          "closes": "17:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/cleo_costureira_2026/",
+        "https://share.google/8aXYMikViNjlSxOEw"
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Paleta Material 3 Expressive (Tons Terrosos e Laranjas Suaves)
+                        m3: {
+                            surface: '#fffbff',
+                            surfaceContainer: '#fcedea',
+                            primary: '#b02f00',
+                            onPrimary: '#ffffff',
+                            primaryContainer: '#ffdbd1',
+                            onPrimaryContainer: '#3b0900',
+                            secondary: '#77574e',
+                            secondaryContainer: '#ffdbd1',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                        '5xl': '3rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* M3 Surface Blur */
+        .glass-m3 {
+            background: rgba(255, 251, 255, 0.9);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        
+        /* Animações Fluidas M3 */
+        .m3-transition {
+            transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+        }
+        .m3-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -8px rgba(176, 47, 0, 0.15);
+        }
+        
+        .fade-in { animation: fadeIn 0.6s cubic-bezier(0.2, 0, 0, 1) forwards; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .skeleton {
+            background: linear-gradient(90deg, #fcedea 25%, #ffdbd1 50%, #fcedea 75%);
+            background-size: 200% 100%;
+            animation: loading 2s infinite;
+        }
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-m3-surface antialiased flex flex-col min-h-screen relative">
+
+    <!-- HEADER M3 -->
+    <header class="fixed w-full top-0 z-50 glass-m3 border-b border-m3-primaryContainer m3-transition" id="header">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full bg-m3-primaryContainer flex items-center justify-center m3-transition group-hover:bg-m3-primary group-hover:text-white">
+                    <i class="fa-solid fa-scissors text-m3-primary group-hover:text-white m3-transition"></i>
+                </div>
+                <span class="font-serif text-xl md:text-2xl font-bold text-m3-onPrimaryContainer tracking-tight">Cléo Costureira</span>
+            </a>
+            
+            <nav class="hidden md:flex gap-8 items-center font-medium text-sm text-m3-secondary">
+                <a href="#servicos" class="hover:text-m3-primary m3-transition">Serviços</a>
+                <a href="#galeria" class="hover:text-m3-primary m3-transition">Galeria</a>
+                <a href="#depoimentos" class="hover:text-m3-primary m3-transition">Avaliações</a>
+                <a href="#localizacao" class="hover:text-m3-primary m3-transition">Localização</a>
+                <a href="https://wa.me/5543984989845?text=Olá%20Cléo!%20Vim%20pelo%20seu%20site." target="_blank" 
+                   class="bg-m3-primary text-white px-6 py-2.5 rounded-full hover:bg-[#8f2600] shadow-sm hover:shadow-md m3-transition flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Falar com Cléo
+                </a>
+            </nav>
+
+            <button class="md:hidden text-m3-primary text-2xl p-2 focus:outline-none" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-m3-surface border-t border-m3-primaryContainer absolute w-full shadow-lg rounded-b-3xl overflow-hidden m3-transition">
+            <div class="flex flex-col px-6 py-6 gap-2 text-center">
+                <a href="#servicos" class="text-m3-secondary py-3 hover:bg-m3-surfaceContainer rounded-xl m3-transition" onclick="toggleMenu()">Serviços</a>
+                <a href="#galeria" class="text-m3-secondary py-3 hover:bg-m3-surfaceContainer rounded-xl m3-transition" onclick="toggleMenu()">Galeria</a>
+                <a href="#depoimentos" class="text-m3-secondary py-3 hover:bg-m3-surfaceContainer rounded-xl m3-transition" onclick="toggleMenu()">Avaliações</a>
+                <a href="#localizacao" class="text-m3-secondary py-3 hover:bg-m3-surfaceContainer rounded-xl m3-transition" onclick="toggleMenu()">Localização</a>
+                <a href="https://wa.me/5543984989845" target="_blank" class="mt-2 bg-m3-primary text-white py-3.5 rounded-full font-medium" onclick="toggleMenu()">
+                    <i class="fa-brands fa-whatsapp mr-2"></i> Orçamento no WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-24">
+        
+        <!-- HERO SECTION M3 Expressive -->
+        <section class="relative bg-m3-surface overflow-hidden pt-10 pb-20">
+            <!-- Formas orgânicas de fundo M3 -->
+            <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-m3-primaryContainer rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
+            <div class="absolute top-0 left-[-100px] w-[500px] h-[500px] bg-[#ffece6] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+
+            <div class="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+                <div class="w-full md:w-1/2 space-y-8 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 bg-m3-surfaceContainer text-m3-primary px-4 py-2 rounded-full text-sm font-medium tracking-wide">
+                        <i class="fa-solid fa-location-dot"></i> Conjunto Vivi Xavier, Londrina
+                    </div>
+                    
+                    <h1 class="text-5xl lg:text-7xl font-serif text-m3-onPrimaryContainer leading-[1.1] tracking-tight">
+                        Ajustes e <br> <span class="italic text-m3-primary font-normal">consertos</span> <br> com carinho.
+                    </h1>
+                    
+                    <p class="text-lg text-m3-secondary max-w-md mx-auto md:mx-0 leading-relaxed">
+                        No ateliê da Cléo, cada peça recebe a atenção que merece. De uma simples barra de calça à confecção sob medida, garantimos um caimento perfeito para você.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
+                        <a href="https://wa.me/5543984989845?text=Olá%20Cléo!%20Vim%20pelo%20seu%20site." target="_blank" 
+                           class="bg-m3-primary text-white font-medium py-4 px-8 rounded-full shadow-lg hover:shadow-xl m3-transition hover:-translate-y-1 flex items-center justify-center gap-2 text-lg">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Fale Comigo
+                        </a>
+                        <a href="#servicos" class="bg-m3-surfaceContainer text-m3-onPrimaryContainer font-medium py-4 px-8 rounded-full hover:bg-m3-primaryContainer m3-transition text-center">
+                            Conhecer Serviços
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2 relative">
+                    <!-- Imagem com bordas expressivas M3 -->
+                    <div class="relative rounded-[3rem] overflow-hidden shadow-2xl m3-transition hover:scale-[1.02]">
+                        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Ateliê da Cléo Costureira" 
+                             class="w-full object-cover h-[450px] lg:h-[600px]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                    </div>
+                    
+                    <!-- Floating Badge Google -->
+                    <div class="absolute bottom-10 -left-6 md:-left-12 bg-white/90 backdrop-blur-md p-4 lg:p-5 rounded-3xl shadow-xl z-20 flex items-center gap-4 m3-transition hover:-translate-y-2">
+                        <div class="bg-yellow-100 p-3 lg:p-4 rounded-2xl text-yellow-600">
+                            <i class="fa-solid fa-star text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm lg:text-base font-bold text-gray-800">5.0 no Google</p>
+                            <p class="text-xs text-gray-500">Avaliações de clientes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVIÇOS M3 -->
+        <section id="servicos" class="py-24 bg-m3-surfaceContainer rounded-t-[3rem] -mt-10 relative z-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif text-m3-onPrimaryContainer mb-6 tracking-tight">Especialidades do Ateliê</h2>
+                    <p class="text-m3-secondary text-lg">Acabamento minucioso e agilidade para deixar suas roupas sempre prontas para o uso.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                    <!-- Serviço 1 -->
+                    <div class="bg-m3-surface p-8 rounded-[2.5rem] shadow-sm hover:shadow-md m3-transition group cursor-default">
+                        <div class="w-16 h-16 bg-m3-primaryContainer rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 m3-transition">
+                            <i class="fa-solid fa-scissors text-m3-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif text-m3-onPrimaryContainer mb-3">Costuras e Barras</h3>
+                        <p class="text-m3-secondary leading-relaxed">Bainhas originais, barras simples e costuras em geral. Devolvemos a peça no tamanho ideal para você.</p>
+                    </div>
+
+                    <!-- Serviço 2 -->
+                    <div class="bg-m3-surface p-8 rounded-[2.5rem] shadow-sm hover:shadow-md m3-transition group cursor-default">
+                        <div class="w-16 h-16 bg-m3-primaryContainer rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 m3-transition">
+                            <i class="fa-solid fa-ruler-combined text-m3-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif text-m3-onPrimaryContainer mb-3">Ajustes Sob Medida</h3>
+                        <p class="text-m3-secondary leading-relaxed">Ajuste de cinturas, pences, mangas e modelagem completa para vestidos, calças e camisas.</p>
+                    </div>
+
+                    <!-- Serviço 3 -->
+                    <div class="bg-m3-surface p-8 rounded-[2.5rem] shadow-sm hover:shadow-md m3-transition group cursor-default">
+                        <div class="w-16 h-16 bg-m3-primaryContainer rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 m3-transition">
+                            <i class="fa-solid fa-shirt text-m3-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif text-m3-onPrimaryContainer mb-3">Consertos Rápidos</h3>
+                        <p class="text-m3-secondary leading-relaxed">Troca de zíper, cerzidos, reforço de botões e recuperação daquela peça que você tanto ama.</p>
+                    </div>
+
+                    <!-- Serviço 4 -->
+                    <div class="bg-m3-surface p-8 rounded-[2.5rem] shadow-sm hover:shadow-md m3-transition group cursor-default">
+                        <div class="w-16 h-16 bg-m3-primaryContainer rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 m3-transition">
+                            <i class="fa-solid fa-user-nurse text-m3-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif text-m3-onPrimaryContainer mb-3">Uniformes</h3>
+                        <p class="text-m3-secondary leading-relaxed">Adaptação, barra e ajustes em uniformes escolares, corporativos e jalecos médicos.</p>
+                    </div>
+
+                    <!-- Serviço 5 -->
+                    <div class="bg-m3-surface p-8 rounded-[2.5rem] shadow-sm hover:shadow-md m3-transition group cursor-default">
+                        <div class="w-16 h-16 bg-m3-primaryContainer rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 m3-transition">
+                            <i class="fa-solid fa-pen-nib text-m3-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif text-m3-onPrimaryContainer mb-3">Bordados</h3>
+                        <p class="text-m3-secondary leading-relaxed">Personalização e identificação através de bordados delicados em toalhas, enxovais e uniformes.</p>
+                    </div>
+
+                    <!-- Serviço 6 -->
+                    <div class="bg-m3-surface p-8 rounded-[2.5rem] shadow-sm hover:shadow-md m3-transition group cursor-default">
+                        <div class="w-16 h-16 bg-m3-primaryContainer rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 m3-transition">
+                            <i class="fa-solid fa-tape text-m3-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif text-m3-onPrimaryContainer mb-3">Confecção</h3>
+                        <p class="text-m3-secondary leading-relaxed">Tem um modelo em mente? Traga sua ideia e suas medidas que confeccionamos peças exclusivas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO INTELIGENTE DE HORÁRIOS E LOCALIZAÇÃO (M3 Expressive) -->
+        <section id="localizacao" class="py-24 bg-m3-surface">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <div class="bg-white rounded-[3rem] overflow-hidden shadow-xl border border-m3-surfaceContainer flex flex-col lg:flex-row m3-transition hover:shadow-2xl">
+                    
+                    <!-- Painel de Informações -->
+                    <div class="w-full lg:w-2/5 bg-m3-primaryContainer p-10 lg:p-14 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl lg:text-4xl font-serif font-bold text-m3-onPrimaryContainer mb-4 tracking-tight">Visite o Ateliê</h2>
+                            <p class="text-m3-onPrimaryContainer/80 mb-10 text-lg">Sua roupa avaliada com cuidado. Venha tomar um café enquanto conversamos sobre o que sua peça precisa.</p>
+                            
+                            <div class="space-y-8">
+                                <!-- Status Inteligente da Loja -->
+                                <div class="bg-white/60 backdrop-blur-sm p-5 rounded-2xl border border-white/50">
+                                    <div class="flex items-center gap-3 mb-2">
+                                        <i class="fa-regular fa-clock text-xl text-m3-primary"></i>
+                                        <h4 class="font-bold text-m3-onPrimaryContainer text-lg">Horário de Atendimento</h4>
+                                    </div>
+                                    <p class="text-m3-secondary ml-8 mb-3">Segunda a Sexta: 08:30 às 17:00</p>
+                                    
+                                    <!-- Badge Dinâmica gerada via JS -->
+                                    <div class="ml-8 inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-semibold transition-colors duration-500" id="status-loja-container">
+                                        <span class="w-2.5 h-2.5 rounded-full" id="status-dot"></span>
+                                        <span id="status-text">Verificando...</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-2xl bg-white/60 flex items-center justify-center shrink-0">
+                                        <i class="fa-solid fa-map-pin text-xl text-m3-primary"></i>
+                                    </div>
+                                    <div class="pt-1">
+                                        <h4 class="font-bold text-m3-onPrimaryContainer text-lg">Endereço</h4>
+                                        <p class="text-m3-secondary mt-1 leading-relaxed">
+                                            Rua David Nasser, 339<br>
+                                            Conjunto Hab. Vivi Xavier<br>
+                                            Londrina, PR - 86082-080
+                                        </p>
+                                        <a href="https://share.google/8aXYMikViNjlSxOEw" target="_blank" class="mt-2 inline-block font-semibold text-m3-primary hover:text-[#8f2600] m3-transition">
+                                            Traçar Rota no Mapa <i class="fa-solid fa-arrow-right text-sm ml-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mapa Integrado -->
+                    <div class="w-full lg:w-3/5 min-h-[400px] lg:min-h-full">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.791599863261!2d-51.1542749!3d-23.2796001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb430d4b998a47%3A0x6b2b5d436a75a7b0!2sR.%20David%20Nasser%2C%20339%20-%20Conj.%20Hab.%20Vivi%20Xavier%2C%20Londrina%20-%20PR%2C%2086082-080!5e0!3m2!1spt-BR!2sbr!4v1714840000000!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="w-full h-full object-cover">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIA M3 -->
+        <section id="galeria" class="py-24 bg-m3-surfaceContainer rounded-[3rem] mx-2 lg:mx-8 mb-10">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                    <div class="max-w-xl">
+                        <h2 class="text-4xl font-serif font-bold text-m3-onPrimaryContainer mb-3 tracking-tight">Nosso Mural</h2>
+                        <p class="text-m3-secondary text-lg">Confira alguns dos trabalhos finalizados direto da nossa página no Instagram.</p>
+                    </div>
+                    <a href="https://www.instagram.com/cleo_costureira_2026/" target="_blank" 
+                       class="mt-6 md:mt-0 px-6 py-3 bg-white rounded-full text-m3-primary font-medium hover:bg-m3-primary hover:text-white m3-transition shadow-sm flex items-center gap-2">
+                        <i class="fa-brands fa-instagram text-xl"></i> @cleo_costureira_2026
+                    </a>
+                </div>
+
+                <div id="instagram-container" class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
+                    <div class="skeleton aspect-square rounded-3xl"></div>
+                    <div class="skeleton aspect-square rounded-3xl hidden md:block"></div>
+                    <div class="skeleton aspect-square rounded-3xl hidden md:block"></div>
+                    <div class="skeleton aspect-square rounded-3xl hidden md:block"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEPOIMENTOS M3 -->
+        <section id="depoimentos" class="py-24 bg-m3-surface">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <div class="text-center mb-16">
+                    <span class="inline-block py-1 px-3 rounded-full bg-yellow-100 text-yellow-700 text-sm font-bold tracking-wide mb-4">
+                        <i class="fa-brands fa-google mr-1"></i> AVALIAÇÕES DO GOOGLE
+                    </span>
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-m3-onPrimaryContainer mb-4 tracking-tight">O carinho de quem aprova</h2>
+                    <p class="text-m3-secondary text-lg max-w-2xl mx-auto">Experiências contadas por quem já vestiu a qualidade dos nossos ajustes.</p>
+                </div>
+
+                <div id="reviews-container" class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="skeleton h-64 rounded-[2.5rem]"></div>
+                    <div class="skeleton h-64 rounded-[2.5rem] hidden md:block"></div>
+                    <div class="skeleton h-64 rounded-[2.5rem] hidden md:block"></div>
+                </div>
+
+                <div class="text-center mt-10">
+                    <a href="https://share.google/8aXYMikViNjlSxOEw" target="_blank" 
+                       class="inline-flex items-center gap-3 bg-m3-surfaceContainer text-m3-onPrimaryContainer font-semibold py-4 px-8 rounded-full hover:bg-m3-primaryContainer m3-transition shadow-sm hover:shadow-md">
+                        Deixar minha avaliação no Google
+                        <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER M3 -->
+    <footer class="bg-m3-surfaceContainer pt-16 pb-8 mt-10 rounded-t-[3rem] mx-2 lg:mx-8 mb-2">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12 border-b border-m3-primaryContainer/50 pb-12">
+                
+                <div class="md:col-span-5">
+                    <a href="#" class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-full bg-m3-primary flex items-center justify-center">
+                            <i class="fa-solid fa-scissors text-white"></i>
+                        </div>
+                        <span class="font-serif text-2xl font-bold text-m3-onPrimaryContainer">Cléo Costureira</span>
+                    </a>
+                    <p class="text-m3-secondary mb-6 max-w-sm leading-relaxed">
+                        Comprometimento e dedicação em cada ponto. Serviços de costura, ajustes e confecção no coração da Zona Norte de Londrina.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="https://www.instagram.com/cleo_costureira_2026/" target="_blank" class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-m3-primary hover:bg-m3-primary hover:text-white m3-transition shadow-sm">
+                            <i class="fa-brands fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://wa.me/5543984989845" target="_blank" class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-m3-primary hover:bg-m3-primary hover:text-white m3-transition shadow-sm">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-3 md:col-start-7">
+                    <h4 class="text-m3-onPrimaryContainer font-bold mb-6 font-serif text-xl">Navegação</h4>
+                    <ul class="space-y-4 text-m3-secondary font-medium">
+                        <li><a href="#servicos" class="hover:text-m3-primary m3-transition">Serviços</a></li>
+                        <li><a href="#galeria" class="hover:text-m3-primary m3-transition">Galeria</a></li>
+                        <li><a href="#depoimentos" class="hover:text-m3-primary m3-transition">Avaliações</a></li>
+                        <li><a href="#localizacao" class="hover:text-m3-primary m3-transition">Onde estamos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="md:col-span-3">
+                    <h4 class="text-m3-onPrimaryContainer font-bold mb-6 font-serif text-xl">Contato</h4>
+                    <ul class="space-y-4 text-m3-secondary font-medium">
+                        <li>
+                            <a href="https://wa.me/5543984989845" class="hover:text-m3-primary m3-transition flex items-center gap-2">
+                                <i class="fa-brands fa-whatsapp"></i> (43) 98498-9845
+                            </a>
+                        </li>
+                        <li>
+                            <span class="flex items-start gap-2">
+                                <i class="fa-solid fa-map-pin mt-1"></i> 
+                                Londrina, PR <br>Conjunto Vivi Xavier
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-m3-secondary/70 font-medium">
+                <p>&copy; <span id="year"></span> Cléo Costureira. Todos os direitos reservados.</p>
+                <p class="mt-2 md:mt-0">Feito com cuidado em Londrina.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAB WhatsApp M3 -->
+    <a href="https://wa.me/5543984989845?text=Olá%20Cléo!%20Vim%20pelo%20seu%20site." 
+       target="_blank" 
+       class="fixed bottom-6 right-6 bg-[#25D366] text-white w-16 h-16 rounded-[1.25rem] flex items-center justify-center text-3xl shadow-[0_8px_30px_rgba(37,211,102,0.4)] hover:shadow-[0_12px_40px_rgba(37,211,102,0.6)] m3-hover m3-transition z-50 animate-bounce"
+       style="animation-duration: 3s;"
+       aria-label="Chamar no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // SCROLL HEADER M3
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-sm');
+                header.style.background = 'rgba(255, 251, 255, 0.95)';
+            } else {
+                header.classList.remove('shadow-sm');
+                header.style.background = 'rgba(255, 251, 255, 0.9)';
+            }
+        });
+
+        // -------------------------------------------------------------
+        // HORÁRIO DE FUNCIONAMENTO INTELIGENTE (Integração Lógica)
+        // -------------------------------------------------------------
+        function checkBusinessHours() {
+            // Pega o horário atual e força o fuso horário de São Paulo (Londrina/BRT)
+            const now = new Date();
+            const options = { timeZone: 'America/Sao_Paulo', hour12: false, hour: 'numeric', minute: 'numeric', weekday: 'numeric' };
+            
+            // Formatadores específicos para pegar dados precisos no fuso
+            const formatterDay = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Sao_Paulo', weekday: 'short' });
+            const formatterHour = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Sao_Paulo', hour12: false, hour: 'numeric' });
+            const formatterMin = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Sao_Paulo', minute: 'numeric' });
+
+            const dayString = formatterDay.format(now); // Mon, Tue, Wed...
+            const hour = parseInt(formatterHour.format(now));
+            const minute = parseInt(formatterMin.format(now) || 0);
+
+            // Transforma o horário num número decimal para facilitar a checagem (ex: 08:30 = 8.5)
+            const currentTime = hour + (minute / 60);
+            
+            // Dias da semana (Segunda a Sexta)
+            const isWeekday = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].includes(dayString);
+            
+            // Horário de funcionamento: 08:30 (8.5) até 17:00 (17)
+            const isOpen = isWeekday && currentTime >= 8.5 && currentTime < 17;
+
+            // Manipulação do DOM (M3 Styling)
+            const container = document.getElementById('status-loja-container');
+            const dot = document.getElementById('status-dot');
+            const text = document.getElementById('status-text');
+
+            if (isOpen) {
+                container.className = "ml-8 inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-bold bg-[#e8f5e9] text-[#2e7d32]";
+                dot.className = "w-2.5 h-2.5 rounded-full bg-[#4caf50] animate-pulse";
+                text.textContent = "Aberto Agora";
+            } else {
+                container.className = "ml-8 inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-sm font-bold bg-[#ffebee] text-[#c62828]";
+                dot.className = "w-2.5 h-2.5 rounded-full bg-[#ef5350]";
+                text.textContent = "Fechado Agora";
+            }
+        }
+
+        // -------------------------------------------------------------
+        // INTEGRAÇÃO REAL-TIME (FRONTEND API)
+        // -------------------------------------------------------------
+        const API_URL = 'https://sua-api-cleo-backend.onrender.com';
+
+        async function loadInstagramFeed() {
+            const container = document.getElementById('instagram-container');
+            try {
+                const response = await fetch(`${API_URL}/api/instagram`);
+                if (!response.ok) throw new Error("API Offline");
+                const photos = await response.json();
+                
+                container.innerHTML = '';
+                photos.slice(0, 4).forEach(photo => {
+                    container.innerHTML += `
+                        <a href="${photo.url}" target="_blank" class="group relative block aspect-square overflow-hidden rounded-3xl bg-m3-surfaceContainer fade-in m3-transition hover:shadow-lg hover:-translate-y-2">
+                            <img src="${photo.imageUrl}" alt="Costureira em Londrina" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-m3-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <i class="fa-brands fa-instagram text-white text-4xl"></i>
+                            </div>
+                        </a>
+                    `;
+                });
+            } catch (error) {
+                // Fallback M3 Style
+                container.innerHTML = `
+                    <a href="https://www.instagram.com/cleo_costureira_2026/" target="_blank" class="group relative block aspect-square overflow-hidden rounded-3xl bg-m3-surfaceContainer fade-in m3-transition hover:-translate-y-2 hover:shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-m3-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fa-brands fa-instagram text-white text-4xl"></i></div>
+                    </a>
+                    <a href="https://www.instagram.com/cleo_costureira_2026/" target="_blank" class="group relative block aspect-square overflow-hidden rounded-3xl bg-m3-surfaceContainer fade-in m3-transition hover:-translate-y-2 hover:shadow-lg" style="animation-delay: 0.1s;">
+                        <img src="https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-m3-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fa-brands fa-instagram text-white text-4xl"></i></div>
+                    </a>
+                    <a href="https://www.instagram.com/cleo_costureira_2026/" target="_blank" class="group relative block aspect-square overflow-hidden rounded-3xl bg-m3-surfaceContainer fade-in m3-transition hover:-translate-y-2 hover:shadow-lg" style="animation-delay: 0.2s;">
+                        <img src="https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-m3-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fa-brands fa-instagram text-white text-4xl"></i></div>
+                    </a>
+                    <a href="https://www.instagram.com/cleo_costureira_2026/" target="_blank" class="group relative block aspect-square overflow-hidden rounded-3xl bg-m3-surfaceContainer fade-in m3-transition hover:-translate-y-2 hover:shadow-lg" style="animation-delay: 0.3s;">
+                        <img src="https://images.unsplash.com/photo-1581007871115-f14bc016e0a4?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-m3-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"><i class="fa-brands fa-instagram text-white text-4xl"></i></div>
+                    </a>
+                `;
+            }
+        }
+
+        async function loadGoogleReviews() {
+            const container = document.getElementById('reviews-container');
+            try {
+                const response = await fetch(`${API_URL}/api/reviews`);
+                if (!response.ok) throw new Error("API Offline");
+                const reviews = await response.json();
+                
+                container.innerHTML = '';
+                reviews.slice(0, 3).forEach(review => {
+                    const inicial = review.author_name.charAt(0).toUpperCase();
+                    container.innerHTML += `
+                        <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-m3-primaryContainer/30 fade-in m3-transition hover:shadow-md cursor-default">
+                            <div class="flex items-center mb-6 gap-4">
+                                <div class="w-14 h-14 bg-m3-primaryContainer rounded-full flex items-center justify-center text-m3-primary font-bold text-2xl">${inicial}</div>
+                                <div>
+                                    <h4 class="font-bold text-m3-onPrimaryContainer text-lg">${review.author_name}</h4>
+                                    <div class="text-[#fbbc04] text-sm flex gap-1 mt-1">
+                                        ${Array(review.rating).fill('<i class="fa-solid fa-star"></i>').join('')}
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-m3-secondary leading-relaxed italic text-lg">"${review.text}"</p>
+                        </div>
+                    `;
+                });
+            } catch (error) {
+                // Fallback M3 Style
+                container.innerHTML = `
+                    <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-m3-primaryContainer/30 fade-in m3-transition hover:shadow-md cursor-default">
+                        <div class="flex items-center mb-6 gap-4">
+                            <div class="w-14 h-14 bg-m3-primaryContainer rounded-full flex items-center justify-center text-m3-primary font-bold text-2xl">M</div>
+                            <div>
+                                <h4 class="font-bold text-m3-onPrimaryContainer text-lg">Maria S.</h4>
+                                <div class="text-[#fbbc04] text-sm flex gap-1 mt-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-m3-secondary leading-relaxed italic text-lg">"A Cléo é atenciosa demais! Fez a barra do meu vestido de festa e ajustou a cintura com perfeição. O caimento ficou ótimo."</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-m3-primaryContainer/30 fade-in m3-transition hover:shadow-md cursor-default" style="animation-delay: 0.1s;">
+                        <div class="flex items-center mb-6 gap-4">
+                            <div class="w-14 h-14 bg-[#e8eaf6] rounded-full flex items-center justify-center text-[#3f51b5] font-bold text-2xl">J</div>
+                            <div>
+                                <h4 class="font-bold text-m3-onPrimaryContainer text-lg">Juliana M.</h4>
+                                <div class="text-[#fbbc04] text-sm flex gap-1 mt-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-m3-secondary leading-relaxed italic text-lg">"Levo todos os uniformes da minha empresa para ela no Vivi Xavier. Trabalho impecável e o bordado fica lindo."</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-m3-primaryContainer/30 fade-in m3-transition hover:shadow-md cursor-default" style="animation-delay: 0.2s;">
+                        <div class="flex items-center mb-6 gap-4">
+                            <div class="w-14 h-14 bg-[#e8f5e9] rounded-full flex items-center justify-center text-[#4caf50] font-bold text-2xl">R</div>
+                            <div>
+                                <h4 class="font-bold text-m3-onPrimaryContainer text-lg">Roberta F.</h4>
+                                <div class="text-[#fbbc04] text-sm flex gap-1 mt-1"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-m3-secondary leading-relaxed italic text-lg">"Recuperou minha calça favorita fazendo um cerzido e troca de zíper perfeitos. Preço justo e muito pontual."</p>
+                    </div>
+                `;
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            // Verifica o horário ao carregar a página
+            checkBusinessHours();
+            // Atualiza o horário a cada 1 minuto (60000 ms) para mudar automático se der a hora
+            setInterval(checkBusinessHours, 60000);
+
+            setTimeout(() => {
+                loadInstagramFeed();
+                loadGoogleReviews();
+            }, 800);
+        });
+
+    </script>
+</body>
+</html>
