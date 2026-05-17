@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Favicon de Tesoura -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✂️</text></svg>">
     
+    <!-- Título otimizado para o Google Meu Negócio e SEO Local (Vivi Xavier / Zona Norte) -->
     <title>Cléo Costureira | Consertos de Roupas, Ajustes e Uniformes na Zona Norte, Conjunto Vivi Xavier - Londrina</title>
+    
+    <!-- O Texto que aparece no Google (Meta Description) -->
     <meta name="description" content="Procurando costureira perto de mim em Londrina? O ateliê da Cléo no Conjunto Vivi Xavier (Zona Norte) faz consertos, ajustes de roupas, bainha, zíper, uniformes e bordados. Serviço rápido e profissional!">
     
+    <!-- Palavras-chave Avançadas -->
     <meta name="keywords" content="costureira, costureira em londrina, costureira perto de mim, costureira vivi xavier, costureira londrina, costureira de roupa, costureira profissional, serviços de costureira, ateliê de costura, conserto de roupa, ajuste de roupa, reparos em roupas, conserto de ziper, bainha, reformas em geral, costuras em geral, ajustes em geral, conjunto vivi xavier, costureira no conjunto vivi xavier, costureira zona norte, zona norte londrina, confecção, confecção de uniformes, confecção sob medida, confecção de roupas, bordados, serviço de bordados, bordados personalizados londrina, costura de uniformes, uniformes profissionais, conserto de jeans, customização de roupas, troca de zíper, bainha original, ajustes de vestido, reparo de roupas londrina, consertos de roupas londrina, ajustes de roupas em londrina, consertos de roupas vivi xavier, reparos rápidos de costura, confecção de uniformes em londrina, uniformes profissionais londrina, bordados personalizados, bordados em londrina, costureira conjunto vivi xavier, costureira zona norte londrina, ateliê conjunto vivi xavier, fazer barra de calça, troca de zíper londrina, ajuste de vestido, costura sob medida londrina, costureira rápida londrina">
+    
     <meta name="author" content="Cléo Costureira">
     
+    <!-- O Texto que aparece nas Redes Sociais (WhatsApp, Facebook, Instagram) -->
     <meta property="og:title" content="Cléo Costureira | A sua costureira na Zona Norte de Londrina (Vivi Xavier)">
     <meta property="og:description" content="Precisando de conserto de roupa, ajuste, bordado ou uniforme na Zona Norte? A Cléo Costureira resolve para você com carinho e rapidez no Conjunto Vivi Xavier! Clique e peça um orçamento.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.instagram.com/cleo_costureira_2026/">
+    <meta property="og:url" content="https://share.google/8aXYMikViNjlSxOEw">
     <meta property="og:image" content="https://cleocostureira.grupobhds.com/costureira-em-vivi-xavier-londrina-zona-norte.jpg">
 
+    <!-- Schema.org / JSON-LD para SEO Local Otimizado (Endereço Atualizado) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -25,7 +33,7 @@
       "name": "Cléo Costureira | Consertos de Roupa, Ajustes, Reparos, Confecção, Uniformes e Bordados em Londrina",
       "image": "https://cleocostureira.grupobhds.com/costureira-em-vivi-xavier-londrina-zona-norte.jpg",
       "@id": "https://share.google/8aXYMikViNjlSxOEw",
-      "url": "https://www.instagram.com/cleo_costureira_2026/",
+      "url": "https://share.google/8aXYMikViNjlSxOEw",
       "telephone": "+5543984989845",
       "address": {
         "@type": "PostalAddress",
@@ -45,10 +53,11 @@
         "name": "Zona Norte, Conjunto Vivi Xavier, Londrina"
       },
       "priceRange": "$$",
-      "sameAs": [
-        "https://www.instagram.com/cleo_costureira_2026/",
-        "https://share.google/8aXYMikViNjlSxOEw"
-      ]
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "2"
+      }
     }
     </script>
 
@@ -83,24 +92,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        .glass-effect { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px); }
-        .fade-in { animation: fadeIn 0.5s ease-in-out; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        .skeleton {
-            background: linear-gradient(90deg, #f3f4f6 25%, #e5e7eb 50%, #f3f4f6 75%);
-            background-size: 200% 100%;
-            animation: loading 1.5s infinite;
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
         }
-        @keyframes loading { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+        .fade-in {
+            animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Material 3 Expressive Shadows & Radius */
+        .m3-card {
+            border-radius: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .m3-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .m3-button {
+            border-radius: 100px;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .m3-button:active {
+            transform: scale(0.97);
+        }
     </style>
 </head>
-<body class="font-sans text-gray-800 bg-brand-50 antialiased flex flex-col min-h-screen relative">
+<body class="font-sans text-gray-800 bg-brand-50 antialiased flex flex-col min-h-screen relative overflow-x-hidden">
 
+    <!-- Header / Navbar -->
     <header class="fixed w-full top-0 z-50 glass-effect border-b border-brand-200 shadow-sm transition-all duration-300" id="header">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center max-w-7xl">
             <a href="#" class="flex items-center gap-2 group">
                 <i class="fa-solid fa-scissors text-brand-600 text-2xl group-hover:rotate-45 transition-transform duration-300"></i>
-                <span class="font-serif text-2xl font-bold text-brand-800">Cléo Costureira</span>
+                <span class="font-serif text-2xl font-bold text-brand-800 tracking-tight">Cléo Costureira</span>
             </a>
             
             <nav class="hidden md:flex gap-6 items-center font-medium text-sm text-gray-600">
@@ -108,22 +138,23 @@
                 <a href="#depoimentos" class="hover:text-brand-600 transition-colors">Avaliações</a>
                 <a href="#localizacao" class="hover:text-brand-600 transition-colors">Localização</a>
                 <a href="https://wa.me/5543984989845?text=Olá%20Cléo!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20um%20orçamento." target="_blank" 
-                   class="bg-brand-600 text-white px-5 py-2 rounded-full hover:bg-brand-700 shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+                   class="bg-brand-600 text-white px-6 py-2.5 m3-button hover:bg-brand-700 shadow-md hover:shadow-lg flex items-center gap-2">
                     <i class="fa-brands fa-whatsapp text-lg"></i> Orçamento
                 </a>
             </nav>
 
-            <button class="md:hidden text-brand-800 text-2xl focus:outline-none" onclick="toggleMenu()">
+            <button class="md:hidden text-brand-800 text-2xl focus:outline-none p-2 rounded-full hover:bg-brand-100 transition-colors" onclick="toggleMenu()" aria-label="Menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
         
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-brand-100 absolute w-full shadow-lg">
-            <div class="flex flex-col px-4 py-4 gap-4 text-center">
-                <a href="#servicos" class="text-gray-600 py-2 border-b border-gray-50" onclick="toggleMenu()">Serviços</a>
-                <a href="#depoimentos" class="text-gray-600 py-2 border-b border-gray-50" onclick="toggleMenu()">Avaliações</a>
-                <a href="#localizacao" class="text-gray-600 py-2 border-b border-gray-50" onclick="toggleMenu()">Localização</a>
-                <a href="https://wa.me/5543984989845" target="_blank" class="bg-brand-600 text-white py-3 rounded-full font-medium" onclick="toggleMenu()">
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md border-t border-brand-100 absolute w-full shadow-lg origin-top transition-all duration-300">
+            <div class="flex flex-col px-4 py-6 gap-3 text-center">
+                <a href="#servicos" class="text-gray-700 font-medium py-3 rounded-2xl hover:bg-brand-50" onclick="toggleMenu()">Serviços</a>
+                <a href="#depoimentos" class="text-gray-700 font-medium py-3 rounded-2xl hover:bg-brand-50" onclick="toggleMenu()">Avaliações</a>
+                <a href="#localizacao" class="text-gray-700 font-medium py-3 rounded-2xl hover:bg-brand-50" onclick="toggleMenu()">Localização</a>
+                <a href="https://wa.me/5543984989845" target="_blank" class="bg-brand-600 text-white py-3.5 m3-button font-medium mt-2 shadow-md" onclick="toggleMenu()">
                     <i class="fa-brands fa-whatsapp mr-2"></i> Solicitar Orçamento
                 </a>
             </div>
@@ -132,270 +163,364 @@
 
     <main class="flex-grow pt-20">
         
+        <!-- Hero Section -->
         <section class="relative bg-white overflow-hidden">
-            <div class="absolute inset-0 z-0 opacity-10" style="background-image: url('https://www.transparenttextures.com/patterns/stardust.png');"></div>
-            <div class="container mx-auto px-4 py-16 md:py-24 relative z-10 flex flex-col md:flex-row items-center gap-10">
-                <div class="w-full md:w-1/2 space-y-6 text-center md:text-left">
-                    <div class="inline-block bg-brand-100 text-brand-800 px-4 py-1 rounded-full text-sm font-semibold tracking-wide mb-2 flex items-center gap-2 w-max mx-auto md:mx-0">
-                        <i class="fa-solid fa-location-dot"></i> Conjunto Vivi Xavier, Londrina
+            <div class="absolute inset-0 z-0 opacity-5" style="background-image: url('https://www.transparenttextures.com/patterns/stardust.png');"></div>
+            <!-- Elementos decorativos (Blobs) -->
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-brand-100 blur-3xl opacity-60 z-0"></div>
+            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-brand-200 blur-3xl opacity-40 z-0"></div>
+
+            <div class="container mx-auto px-4 py-16 md:py-24 relative z-10 flex flex-col lg:flex-row items-center gap-12 max-w-7xl">
+                <div class="w-full lg:w-1/2 space-y-6 text-center lg:text-left fade-in">
+                    <div class="inline-flex items-center gap-2 bg-brand-50 border border-brand-100 text-brand-800 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide mb-2 shadow-sm">
+                        <span class="relative flex h-3 w-3">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-500"></span>
+                        </span>
+                        Costureira no Conjunto Vivi Xavier, Zona Norte
                     </div>
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-gray-800 leading-tight">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-gray-900 leading-tight">
                         <span class="text-brand-600">Cléo Costureira</span> <br>
-                        <span class="text-3xl md:text-4xl">Sua costureira de confiança</span>
+                        <span class="text-3xl md:text-4xl lg:text-5xl text-gray-800 mt-2 block">Sua costureira de confiança em Londrina</span>
                     </h1>
-                    <p class="text-lg text-gray-600 max-w-lg mx-auto md:mx-0">
-                        No ateliê da Cléo, cada peça recebe o cuidado que merece. Do conserto de roupas, ajustes e barras à confecção de uniformes.
+                    <p class="text-lg text-gray-600 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+                        Procurando uma <strong>costureira perto de mim</strong>? Atendo na Zona Norte de Londrina com conserto de roupas, ajustes de vestido, bainhas, troca de zíper e confecção de uniformes com caimento perfeito.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-6">
                         <a href="https://wa.me/5543984989845?text=Olá%20Cléo!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20serviço." target="_blank" 
-                           class="bg-brand-600 hover:bg-brand-700 text-white font-medium py-3 px-8 rounded-full shadow-lg shadow-brand-500/30 transition-all hover:-translate-y-1 flex items-center justify-center gap-2">
+                           class="bg-brand-600 hover:bg-brand-700 text-white font-medium py-3.5 px-8 m3-button shadow-lg shadow-brand-500/30 flex items-center justify-center gap-2 text-lg">
                             <i class="fa-brands fa-whatsapp text-xl"></i> Fale Comigo
                         </a>
-                        <a href="#servicos" class="bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 font-medium py-3 px-8 rounded-full shadow-sm transition-all text-center">
+                        <a href="#servicos" class="bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 font-medium py-3.5 px-8 m3-button shadow-sm text-center">
                             Ver Serviços
                         </a>
                     </div>
                 </div>
-                <div class="w-full md:w-1/2 relative">
-                    <div class="absolute inset-0 bg-brand-300 rounded-full blur-3xl opacity-30 transform -translate-x-10 translate-y-10"></div>
-                    <!-- Foto corrigida para link absoluto do servidor -->
-                    <img src="https://cleocostureira.grupobhds.com/costureira-em-vivi-xavier-londrina-zona-norte.jpg" 
-                         alt="Ateliê da Cléo Costureira em Londrina" 
-                         class="rounded-2xl shadow-2xl relative z-10 w-full object-cover h-[400px] md:h-[500px]">
+                
+                <div class="w-full lg:w-1/2 relative fade-in" style="animation-delay: 0.2s;">
+                    <!-- A Imagem Principal Oficial hospedada -->
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://cleocostureira.grupobhds.com/costureira-em-vivi-xavier-londrina-zona-norte.jpg" 
+                             alt="Ateliê da Cléo Costureira em Londrina - Conjunto Vivi Xavier" 
+                             class="w-full object-cover h-[400px] md:h-[550px] transform hover:scale-105 transition-transform duration-700">
+                    </div>
                     
-                    <div class="absolute bottom-6 -left-6 md:-left-12 bg-white p-4 rounded-2xl shadow-xl z-20 flex items-center gap-4 animate-bounce" style="animation-duration: 3s;">
-                        <div class="bg-yellow-100 p-3 rounded-full text-yellow-600">
-                            <i class="fa-solid fa-star"></i>
+                    <!-- Selo de Avaliação (Dados Reais) -->
+                    <div class="absolute bottom-6 -left-4 md:-left-8 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl z-20 flex items-center gap-4 m3-card animate-bounce" style="animation-duration: 3s;">
+                        <div class="bg-green-100 p-3 rounded-full text-green-600 flex items-center justify-center w-12 h-12">
+                            <i class="fa-solid fa-star text-xl"></i>
                         </div>
                         <div>
-                            <p class="text-sm font-bold text-gray-800" id="hero-rating-text">5.0 no Google</p>
-                            <p class="text-xs text-gray-500">Avaliações de clientes</p>
+                            <p class="text-sm font-bold text-gray-900 flex items-center gap-1">
+                                Nota 5,0 <span class="text-yellow-400 text-xs"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                            </p>
+                            <p class="text-xs text-gray-600 font-medium">Baseado em avaliações reais</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="servicos" class="py-20 bg-brand-50">
-            <div class="container mx-auto px-4">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-800 mb-4">Serviços do Ateliê</h2>
-                    <p class="text-gray-600 text-lg">Do conserto de zíper à confecção. Realizo ajustes em geral, customização e reformas com excelência na Zona Norte de Londrina.</p>
+        <!-- Serviços -->
+        <section id="servicos" class="py-24 bg-brand-50 relative">
+            <div class="container mx-auto px-4 max-w-7xl">
+                <div class="text-center max-w-3xl mx-auto mb-16 fade-in">
+                    <span class="text-brand-600 font-bold tracking-wider uppercase text-sm mb-2 block">Minhas Especialidades</span>
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-6">Serviços de Costura Profissional</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">Do conserto de zíper à confecção sob medida. Realizo ajustes em geral, customização de roupas e reformas com excelência na Zona Norte de Londrina.</p>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:border-brand-200 transition-all group">
-                        <div class="w-14 h-14 bg-brand-100 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-scissors text-brand-600 text-xl"></i>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                    <!-- Serviço 1 -->
+                    <div class="bg-white p-8 m3-card border border-gray-100 hover:border-brand-200 group">
+                        <div class="w-16 h-16 bg-brand-100 rounded-2xl flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-transform duration-300 group-hover:bg-brand-600 group-hover:text-white text-brand-600">
+                            <i class="fa-solid fa-scissors text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2 font-serif">Costuras em Geral</h3>
-                        <p class="text-gray-600 text-sm">Bainha original, troca de zíper, conserto de jeans e fazer barra de calça. Sua roupa perfeita para o uso diário.</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 font-serif">Costuras em Geral</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Bainha original, troca de zíper, conserto de jeans e fazer barra de calça. Sua roupa perfeita para o uso diário.</p>
                     </div>
 
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:border-brand-200 transition-all group">
-                        <div class="w-14 h-14 bg-brand-100 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-ruler-combined text-brand-600 text-xl"></i>
+                    <!-- Serviço 2 -->
+                    <div class="bg-white p-8 m3-card border border-gray-100 hover:border-brand-200 group">
+                        <div class="w-16 h-16 bg-brand-100 rounded-2xl flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-transform duration-300 group-hover:bg-brand-600 group-hover:text-white text-brand-600">
+                            <i class="fa-solid fa-ruler-combined text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2 font-serif">Ajuste de Roupa</h3>
-                        <p class="text-gray-600 text-sm">Ajustes de vestido, cinturas, pences e modelagem sob medida. Valorize o caimento perfeito no seu corpo.</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 font-serif">Ajuste de Roupa</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Ajustes de vestido, cinturas, pences e modelagem sob medida. Valorize o caimento perfeito no seu corpo.</p>
                     </div>
 
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:border-brand-200 transition-all group">
-                        <div class="w-14 h-14 bg-brand-100 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-shirt text-brand-600 text-xl"></i>
+                    <!-- Serviço 3 -->
+                    <div class="bg-white p-8 m3-card border border-gray-100 hover:border-brand-200 group">
+                        <div class="w-16 h-16 bg-brand-100 rounded-2xl flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-transform duration-300 group-hover:bg-brand-600 group-hover:text-white text-brand-600">
+                            <i class="fa-solid fa-shirt text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2 font-serif">Consertos & Reparos</h3>
-                        <p class="text-gray-600 text-sm">Consertos de roupas londrina e reparos rápidos de costura. Cerzidos e recuperação total de peças queridas.</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 font-serif">Consertos & Reparos</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Consertos de roupas londrina e reparos rápidos de costura. Cerzidos e recuperação total de peças queridas.</p>
                     </div>
 
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:border-brand-200 transition-all group">
-                        <div class="w-14 h-14 bg-brand-100 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-tape text-brand-600 text-xl"></i>
+                    <!-- Serviço 4 -->
+                    <div class="bg-white p-8 m3-card border border-gray-100 hover:border-brand-200 group">
+                        <div class="w-16 h-16 bg-brand-100 rounded-2xl flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-transform duration-300 group-hover:bg-brand-600 group-hover:text-white text-brand-600">
+                            <i class="fa-solid fa-tape text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2 font-serif">Reformas em Geral</h3>
-                        <p class="text-gray-600 text-sm">Customização de roupas, modernização de modelagens antigas e transformações completas do seu guarda-roupa.</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 font-serif">Reformas em Geral</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Customização de roupas, modernização de modelagens antigas e transformações completas do seu guarda-roupa.</p>
                     </div>
 
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:border-brand-200 transition-all group">
-                        <div class="w-14 h-14 bg-brand-100 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-user-nurse text-brand-600 text-xl"></i>
+                    <!-- Serviço 5 -->
+                    <div class="bg-white p-8 m3-card border border-gray-100 hover:border-brand-200 group">
+                        <div class="w-16 h-16 bg-brand-100 rounded-2xl flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-transform duration-300 group-hover:bg-brand-600 group-hover:text-white text-brand-600">
+                            <i class="fa-solid fa-user-nurse text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2 font-serif">Uniformes</h3>
-                        <p class="text-gray-600 text-sm">Confecção de uniformes em londrina, ajustes para escolas e empresas. Qualidade e durabilidade garantidas.</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 font-serif">Uniformes Profissionais</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Confecção de uniformes em londrina, ajustes para escolas e empresas. Qualidade e durabilidade garantidas.</p>
                     </div>
 
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:border-brand-200 transition-all group">
-                        <div class="w-14 h-14 bg-brand-100 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-star text-brand-600 text-xl"></i>
+                    <!-- Serviço 6 -->
+                    <div class="bg-white p-8 m3-card border border-gray-100 hover:border-brand-200 group">
+                        <div class="w-16 h-16 bg-brand-100 rounded-2xl flex items-center justify-center mb-6 group-hover:-translate-y-2 transition-transform duration-300 group-hover:bg-brand-600 group-hover:text-white text-brand-600">
+                            <i class="fa-solid fa-star text-2xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2 font-serif">Bordados</h3>
-                        <p class="text-gray-600 text-sm">Bordados personalizados londrina para jalecos, toalhas e uniformes. Detalhes que fazem toda a diferença.</p>
-                    </div>
-
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:border-brand-200 transition-all group sm:col-span-2 md:col-span-3 lg:col-span-2">
-                        <div class="w-14 h-14 bg-brand-100 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-pen-ruler text-brand-600 text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800 mb-2 font-serif">Confecção Sob Medida</h3>
-                        <p class="text-gray-600 text-sm">Confecção de roupas exclusivas. Traga sua ideia, seja um vestido de festa ou roupa casual, e realizo seu projeto.</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 font-serif">Bordados & Confecção</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Bordados personalizados e confecção de roupas exclusivas sob medida. Traga sua ideia e realizamos seu projeto.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Seção de Depoimentos Mapeada com Scraping -->
-        <section id="depoimentos" class="py-24 bg-gray-900 text-white relative overflow-hidden rounded-[3rem] mx-4 my-10 shadow-2xl">
-            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, #ea580c 1px, transparent 0); background-size: 24px 24px;"></div>
+        <!-- Seção de SEO Local -->
+        <section class="py-16 bg-white border-y border-gray-100">
+            <div class="container mx-auto px-4 max-w-4xl text-center">
+                <h2 class="text-2xl font-serif font-bold text-brand-700 mb-6">O Melhor Ateliê de Londrina!</h2>
+                <p class="text-gray-600 leading-relaxed text-base md:text-lg">
+                    No meu <strong>ateliê de costura</strong>, você encontra a melhor <strong>costureira profissional</strong> da região. 
+                    Se você mora ou trabalha na Zona Norte e frequentemente busca por "<strong>costureira perto de mim</strong>" ou "<strong>consertos de roupas vivi xavier</strong>", 
+                    estou aqui para entregar um serviço impecável. Desde uma simples <strong>bainha original</strong>, <strong>troca de zíper londrina</strong> ou 
+                    <strong>fazer barra de calça</strong>, até complexas <strong>costuras de uniformes</strong> e <strong>ajustes de vestido</strong>, meu trabalho é reconhecido como o da 
+                    <strong>costureira rápida londrina</strong> com o melhor acabamento da <strong>Zona Norte Londrina</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção de Depoimentos (Dados Reais Fixados) -->
+        <section id="depoimentos" class="py-24 bg-gray-900 text-white relative overflow-hidden">
+            <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle at 2px 2px, #ea580c 1px, transparent 0); background-size: 32px 32px;"></div>
             
             <div class="container mx-auto px-4 relative z-10 max-w-6xl">
-                <div class="text-center mb-16">
-                    <span class="inline-block py-1.5 px-4 rounded-full bg-white/10 border border-white/20 text-sm font-bold tracking-wide mb-4 text-yellow-400">
-                        <i class="fa-brands fa-google mr-1"></i> AVALIAÇÕES DO GOOGLE
-                    </span>
-                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4 tracking-tight">O carinho de quem aprova</h2>
-                    <p class="text-gray-300 text-lg max-w-2xl mx-auto" id="subtitle-avaliacoes">Experiências contadas por quem já vestiu a qualidade dos nossos ajustes.</p>
+                <div class="text-center mb-16 fade-in">
+                    <div class="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-2 rounded-full mb-6 border border-white/10">
+                        <span class="font-bold text-2xl text-white">5,0</span>
+                        <div class="flex text-yellow-400 text-lg">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-gray-300 text-sm ml-2">(2 avaliações no Google)</span>
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold mb-4">O que minhas clientes dizem</h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto text-lg">Avaliações reais publicadas diretamente no nosso perfil do Google Meu Negócio.</p>
                 </div>
 
-                <div id="reviews-container" class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                    <div class="skeleton h-64 rounded-3xl opacity-20"></div>
-                    <div class="skeleton h-64 rounded-3xl opacity-20 hidden md:block"></div>
-                    <div class="skeleton h-64 rounded-3xl opacity-20 hidden md:block"></div>
+                <div class="flex flex-col md:flex-row justify-center gap-8 mb-12">
+                    
+                    <!-- Avaliação 1 -->
+                    <div class="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-3xl w-full md:w-1/2 hover:bg-white/10 transition-colors">
+                        <div class="flex items-center mb-6 gap-4">
+                            <div class="w-14 h-14 bg-brand-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-inner">
+                                G
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-white">Guilherme H Santos</h4>
+                                <div class="text-yellow-400 text-sm flex gap-1 mt-1">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 italic text-lg leading-relaxed">"Fez excelente serviço em reparos e confecção de uniforme. Recomendo"</p>
+                        <div class="mt-6 flex items-center gap-2 text-xs text-brand-400 font-medium">
+                            <i class="fa-brands fa-google text-lg"></i> Publicado no Google
+                        </div>
+                    </div>
+
+                    <!-- Avaliação 2 -->
+                    <div class="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-3xl w-full md:w-1/2 hover:bg-white/10 transition-colors">
+                        <div class="flex items-center mb-6 gap-4">
+                            <div class="w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-inner">
+                                B
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-white">Bruno Henrique</h4>
+                                <div class="text-yellow-400 text-sm flex gap-1 mt-1">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 italic text-lg leading-relaxed">"Muito caprichosa com a costura! Excelente costureira"</p>
+                        <div class="mt-6 flex items-center gap-2 text-xs text-brand-400 font-medium">
+                            <i class="fa-brands fa-google text-lg"></i> Publicado no Google
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="text-center mt-10">
+                <div class="text-center mt-12">
                     <a href="https://share.google/8aXYMikViNjlSxOEw" target="_blank" 
-                       class="inline-flex items-center gap-3 bg-white text-gray-900 font-semibold py-4 px-8 rounded-full hover:bg-gray-100 transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1">
-                        Deixar minha avaliação
-                        <i class="fa-solid fa-arrow-up-right-from-square text-sm text-gray-500"></i>
+                       class="inline-flex items-center gap-3 bg-white text-gray-900 font-bold py-4 px-10 m3-button hover:bg-gray-100 transition-all shadow-xl hover:scale-105">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" class="w-6 h-6">
+                        Ver Mais no Google ou Avaliar
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="contato" class="py-20 bg-white">
-            <div class="container mx-auto px-4 max-w-6xl">
-                <div class="bg-brand-50 rounded-[3rem] overflow-hidden shadow-lg flex flex-col lg:flex-row border border-brand-100">
+        <!-- Contato / Formulário Inteligente -->
+        <section id="contato" class="py-24 bg-brand-50 relative">
+            <div class="absolute top-0 left-0 w-full h-64 bg-gray-900"></div> <!-- Extensão do fundo escuro para design sobreposto -->
+            
+            <div class="container mx-auto px-4 max-w-6xl relative z-10">
+                <div class="bg-white rounded-[2rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row border border-gray-100">
                     
-                    <div class="w-full lg:w-2/5 bg-brand-600 text-white p-10 lg:p-14 flex flex-col justify-between relative overflow-hidden">
-                        <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-brand-500 rounded-full blur-3xl opacity-50"></div>
+                    <!-- Info Contato -->
+                    <div class="w-full lg:w-2/5 bg-brand-600 text-white p-10 md:p-12 flex flex-col relative overflow-hidden">
+                        <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-brand-500 rounded-full blur-3xl opacity-60"></div>
                         <div class="relative z-10">
-                            <h3 class="text-3xl lg:text-4xl font-serif font-bold mb-4 tracking-tight">Visite o Ateliê</h3>
-                            <p class="text-brand-100 mb-10 text-lg">Sua roupa avaliada com cuidado. Preencha o formulário ou venha tomar um café!</p>
+                            <h3 class="text-3xl font-serif font-bold mb-4">Vamos conversar?</h3>
+                            <p class="text-brand-50 mb-10 text-lg">Sua costureira no Conjunto Vivi Xavier. Preencha o formulário ou me chame direto no WhatsApp!</p>
                             
-                            <div class="space-y-8">
-                                <div class="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 shadow-inner">
-                                    <div class="flex items-center gap-3 mb-2">
-                                        <i class="fa-regular fa-clock text-xl text-yellow-300"></i>
-                                        <h4 class="font-bold text-lg">Horário de Atendimento</h4>
+                            <div class="space-y-8 flex-grow">
+                                <div class="flex items-center gap-5">
+                                    <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0 backdrop-blur-sm">
+                                        <i class="fa-brands fa-whatsapp text-2xl"></i>
                                     </div>
-                                    <p class="text-brand-100 ml-8 mb-4">Segunda a Sexta: 08:30 às 17:00</p>
-                                    
-                                    <div class="ml-8 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold bg-white/20 text-white transition-colors" id="status-loja-container">
-                                        <span class="w-2.5 h-2.5 rounded-full bg-gray-300 animate-pulse" id="status-dot"></span>
-                                        <span id="status-text">Verificando...</span>
+                                    <div>
+                                        <p class="text-sm text-brand-200 mb-1">WhatsApp / Telefone</p>
+                                        <a href="https://wa.me/5543984989845" target="_blank" class="font-bold text-xl hover:text-white transition-colors">(43) 98498-9845</a>
                                     </div>
                                 </div>
-
-                                <div class="flex items-start gap-4">
-                                    <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center shrink-0 border border-white/20">
-                                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <div class="flex items-center gap-5">
+                                    <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0 backdrop-blur-sm">
+                                        <i class="fa-solid fa-location-dot text-2xl"></i>
                                     </div>
-                                    <div class="pt-1">
-                                        <p class="text-sm text-brand-200">WhatsApp / Telefone</p>
-                                        <a href="https://wa.me/5543984989845" target="_blank" class="font-bold text-xl hover:underline">(43) 98498-9845</a>
+                                    <div>
+                                        <p class="text-sm text-brand-200 mb-1">Atendimento em</p>
+                                        <p class="font-bold text-lg">Conj. Vivi Xavier, Londrina</p>
                                     </div>
                                 </div>
-                                
-                                <div class="mt-4 bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20 shadow-inner">
-                                    <div class="flex items-center gap-3 mb-2">
-                                        <i class="fa-solid fa-star text-xl text-yellow-300"></i>
-                                        <h4 class="font-bold text-lg">Já é cliente?</h4>
+                                <div class="flex items-center gap-5">
+                                    <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0 backdrop-blur-sm">
+                                        <i class="fa-regular fa-clock text-2xl"></i>
                                     </div>
-                                    <p class="text-brand-100 text-sm mb-4 leading-relaxed">Sua opinião é muito importante. Avalie nosso serviço e ajude outras pessoas a nos encontrarem!</p>
-                                    <a href="https://share.google/8aXYMikViNjlSxOEw" target="_blank" class="inline-flex items-center justify-center w-full gap-2 bg-white text-brand-700 font-bold py-3 px-4 rounded-xl hover:bg-gray-50 transition-colors shadow-md">
-                                        <i class="fa-brands fa-google text-lg"></i> Deixar minha avaliação
-                                    </a>
+                                    <div>
+                                        <p class="text-sm text-brand-200 mb-1">Horário de Funcionamento</p>
+                                        <p class="font-bold text-base leading-snug">
+                                            Segunda a Sexta: 08:30 às 17:00<br>
+                                            <span class="text-brand-200 font-normal text-sm">Sábado e Domingo: Fechado</span>
+                                        </p>
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
 
-                    <div class="w-full lg:w-3/5 p-10 lg:p-14 bg-white relative">
-                        <h3 class="text-2xl lg:text-3xl font-bold text-gray-800 mb-8 tracking-tight">Orçamento Rápido</h3>
-                        
-                        <form id="orcamentoForm" onsubmit="enviarWhatsApp(event)" class="space-y-5">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-1.5">Seu Nome</label>
-                                    <input type="text" id="nome" required class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-brand-500 focus:bg-white outline-none transition-all">
+                    <!-- Formulário e Avaliação CTA -->
+                    <div class="w-full lg:w-3/5 p-10 md:p-12 bg-white relative flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-6">Solicite um Orçamento Rápido</h3>
+                            
+                            <form id="orcamentoForm" onsubmit="enviarWhatsApp(event)" class="space-y-5">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                    <div>
+                                        <label class="block text-sm font-semibold text-gray-700 mb-2">Seu Nome</label>
+                                        <input type="text" id="nome" required class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all" placeholder="Como gosta de ser chamado?">
+                                    </div>
+                                    <div>
+                                        <label class="block text-sm font-semibold text-gray-700 mb-2">Serviço Desejado</label>
+                                        <select id="servico" class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all text-gray-700">
+                                            <option>Consertos / Reparos</option>
+                                            <option>Troca de Zíper / Bainha</option>
+                                            <option>Ajustes de Vestido / Peças</option>
+                                            <option>Uniformes Profissionais</option>
+                                            <option>Bordados Personalizados</option>
+                                            <option>Confecção Sob Medida</option>
+                                            <option>Outro</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-1.5">Serviço Desejado</label>
-                                    <select id="servico" class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-brand-500 focus:bg-white outline-none transition-all cursor-pointer">
-                                        <option>Consertos / Reparos</option>
-                                        <option>Troca de Zíper / Bainha</option>
-                                        <option>Ajustes de Vestido / Peças</option>
-                                        <option>Uniformes Profissionais</option>
-                                        <option>Bordados Personalizados</option>
-                                        <option>Confecção Sob Medida</option>
-                                        <option>Outro</option>
-                                    </select>
+                                    <label class="block text-sm font-semibold text-gray-700 mb-2">Detalhes (Opcional mas recomendado)</label>
+                                    <textarea id="mensagem" rows="3" placeholder="Ex: Preciso trocar o zíper de duas calças e fazer a barra de um vestido..." class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-all resize-none"></textarea>
                                 </div>
+                                <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-4 px-6 m3-button shadow-md transition-all flex justify-center items-center gap-2 mt-2 text-lg">
+                                    <i class="fa-brands fa-whatsapp text-xl"></i> Enviar Pedido via WhatsApp
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- CTA de Avaliação do Google Inteligente -->
+                        <div class="mt-10 pt-8 border-t border-gray-100">
+                            <div class="bg-blue-50/50 rounded-2xl p-6 border border-blue-100 flex flex-col sm:flex-row items-center gap-6 justify-between">
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1 flex items-center gap-2">
+                                        <i class="fa-brands fa-google text-blue-500"></i> Já é cliente da Cléo?
+                                    </h4>
+                                    <p class="text-sm text-gray-600">Sua opinião é muito importante. Avalie nosso serviço e ajude outras pessoas a nos encontrarem!</p>
+                                </div>
+                                <a href="https://share.google/8aXYMikViNjlSxOEw" target="_blank" class="shrink-0 bg-white border border-gray-200 text-gray-800 font-semibold py-2.5 px-6 rounded-full hover:bg-gray-50 hover:border-gray-300 transition-all shadow-sm text-sm whitespace-nowrap">
+                                    Deixar Avaliação
+                                </a>
                             </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1.5">Detalhes da Peça (Opcional)</label>
-                                <textarea id="mensagem" rows="3" placeholder="Ex: Preciso trocar o zíper de duas calças e ajustar a cintura..." class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-brand-500 focus:bg-white outline-none transition-all resize-none"></textarea>
-                            </div>
-                            <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-4 px-6 rounded-2xl shadow-lg hover:shadow-xl transition-all flex justify-center items-center gap-2 mt-4 hover:-translate-y-1">
-                                <i class="fa-brands fa-whatsapp text-xl"></i> Enviar via WhatsApp
-                            </button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="localizacao" class="border-t border-gray-100">
-            <div class="flex flex-col md:flex-row">
-                <div class="w-full md:w-1/3 bg-gray-50 p-10 lg:p-14 flex flex-col justify-center">
-                    <h2 class="text-3xl font-serif font-bold text-gray-800 mb-4">Onde me encontrar</h2>
-                    <p class="text-gray-600 mb-8 leading-relaxed">Traga suas peças para uma avaliação no ateliê no Conjunto Vivi Xavier (Zona Norte) ou fale no WhatsApp.</p>
+        <!-- Localização com Rota Integrada -->
+        <section id="localizacao" class="bg-white border-t border-gray-100">
+            <div class="flex flex-col md:flex-row min-h-[500px]">
+                
+                <div class="w-full md:w-5/12 bg-gray-50 p-10 lg:p-16 flex flex-col justify-center relative">
+                    <h2 class="text-3xl font-serif font-bold text-gray-900 mb-4">Onde me encontrar</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Venha fazer uma visita ao ateliê no Conjunto Vivi Xavier (Zona Norte) ou fale no WhatsApp para tirar dúvidas.</p>
                     
-                    <div class="bg-white p-6 rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                        <div class="flex gap-4 items-start mb-6">
-                            <i class="fa-solid fa-map-pin text-brand-600 text-2xl mt-1"></i>
+                    <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm mb-6">
+                        <div class="flex gap-4 items-start mb-4">
+                            <div class="bg-brand-100 w-10 h-10 rounded-full flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-map-pin text-brand-600 text-lg"></i>
+                            </div>
                             <div>
-                                <h4 class="font-bold text-gray-800 text-lg">Endereço do Ateliê</h4>
-                                <p class="text-gray-600 mt-2 leading-relaxed">
+                                <h4 class="font-bold text-gray-900 text-lg">Endereço do Ateliê</h4>
+                                <p class="text-gray-600 text-sm mt-2 leading-relaxed">
                                     Rua David Nasser, 339<br>
-                                    Conjunto Vivi Xavier<br>
+                                    Conjunto Habitacional Vivi Xavier<br>
                                     Londrina, PR<br>
                                     CEP: 86082-080
                                 </p>
                             </div>
                         </div>
-                        
-                        <button onclick="calcularRotaMapa()" class="block w-full text-center bg-brand-100 text-brand-700 font-semibold py-3 rounded-2xl hover:bg-brand-200 transition-colors mb-3">
-                            <i class="fa-solid fa-route mr-2"></i> Ver Rota do Meu Local
-                        </button>
-                        
-                        <a href="https://share.google/8aXYMikViNjlSxOEw" target="_blank" class="block w-full text-center border border-gray-200 text-gray-600 font-semibold py-3 rounded-2xl hover:bg-gray-50 transition-colors">
-                            <i class="fa-solid fa-arrow-up-right-from-square mr-2 text-sm"></i> Abrir no App do Google
-                        </a>
-                    </div>
-                </div>
-                <div class="w-full md:w-2/3 h-64 md:h-auto min-h-[400px] relative">
-                    <div id="loading-rota" class="hidden absolute inset-0 bg-white/90 z-10 flex flex-col items-center justify-center backdrop-blur-sm">
-                        <i id="loading-icon" class="fa-solid fa-spinner fa-spin text-4xl text-brand-600 mb-4"></i>
-                        <p id="loading-text" class="text-gray-800 font-bold text-center px-4">Calculando sua rota...</p>
                     </div>
 
-                    <iframe id="mapa-iframe"
+                    <!-- Botão de Traçar Rota Dinâmica -->
+                    <button onclick="tracarRota()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-6 m3-button shadow-md transition-all flex justify-center items-center gap-2">
+                        <i class="fa-solid fa-route text-lg"></i> Ver Rota do Meu Local
+                    </button>
+                    <p id="geo-status" class="text-xs text-center text-gray-500 mt-3 font-medium h-4"></p>
+                </div>
+                
+                <!-- Mapa Embutido -->
+                <div class="w-full md:w-7/12 relative min-h-[400px]" id="mapa-container">
+                    
+                    <!-- Overlay de Loading (Glassmorphism) p/ Rota -->
+                    <div id="mapa-loading" class="absolute inset-0 z-20 hidden items-center justify-center bg-white/60 backdrop-blur-md transition-all duration-300">
+                        <div class="bg-white p-6 rounded-2xl shadow-xl flex flex-col items-center gap-4 border border-gray-100">
+                            <i class="fa-solid fa-compass fa-spin text-4xl text-brand-500"></i>
+                            <p class="font-semibold text-gray-800">Calculando a melhor rota...</p>
+                        </div>
+                    </div>
+
+                    <!-- Iframe do Mapa -->
+                    <iframe 
+                        id="google-map-iframe"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.791599863261!2d-51.1542749!3d-23.2796001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb430d4b998a47%3A0x6b2b5d436a75a7b0!2sR.%20David%20Nasser%2C%20339%20-%20Conj.%20Hab.%20Vivi%20Xavier%2C%20Londrina%20-%20PR%2C%2086082-080!5e0!3m2!1spt-BR!2sbr!4v1714840000000!5m2!1spt-BR!2sbr" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
+                        class="absolute inset-0 w-full h-full border-0 z-10" 
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade">
@@ -406,80 +531,102 @@
 
     </main>
 
+    <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-16 border-t-4 border-brand-600">
-        <div class="container mx-auto px-6 max-w-6xl">
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12 border-b border-gray-800 pb-12">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 mb-12">
                 
-                <div class="md:col-span-5">
+                <div class="md:col-span-5 lg:col-span-4">
                     <a href="#" class="flex items-center gap-2 mb-6">
-                        <i class="fa-solid fa-scissors text-brand-500 text-2xl"></i>
-                        <span class="font-serif text-2xl font-bold text-white">Cléo Costureira</span>
+                        <i class="fa-solid fa-scissors text-brand-500 text-3xl"></i>
+                        <span class="font-serif text-3xl font-bold text-white">Cléo Costureira</span>
                     </a>
-                    <p class="text-sm text-gray-400 mb-8 max-w-sm leading-relaxed">Serviços profissionais de costureira, ateliê de costura, conserto de jeans, uniformes e bordados no Conjunto Vivi Xavier, Zona Norte de Londrina.</p>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed">O Melhor Ateliê de Londrina. Serviços profissionais de costureira, conserto de roupas, uniformes e bordados no Conjunto Vivi Xavier (Zona Norte).</p>
                     <div class="flex gap-4">
-                        <a href="https://www.instagram.com/cleo_costureira_2026/" target="_blank" class="w-12 h-12 rounded-2xl bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-all hover:-translate-y-1">
-                            <i class="fa-brands fa-instagram text-xl"></i>
-                        </a>
-                        <a href="https://wa.me/5543984989845" target="_blank" class="w-12 h-12 rounded-2xl bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-all hover:-translate-y-1">
+                        <a href="https://wa.me/5543984989845" target="_blank" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-500 hover:text-white transition-all transform hover:-translate-y-1" aria-label="WhatsApp">
                             <i class="fa-brands fa-whatsapp text-xl"></i>
                         </a>
-                        <a href="https://share.google/8aXYMikViNjlSxOEw" target="_blank" class="w-12 h-12 rounded-2xl bg-gray-800 flex items-center justify-center hover:bg-brand-600 hover:text-white transition-all hover:-translate-y-1">
+                        <a href="https://share.google/8aXYMikViNjlSxOEw" target="_blank" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-500 hover:text-white transition-all transform hover:-translate-y-1" aria-label="Google Meu Negócio">
                             <i class="fa-brands fa-google text-xl"></i>
                         </a>
                     </div>
                 </div>
                 
-                <div class="md:col-span-3 md:col-start-7">
+                <div class="md:col-span-3 lg:col-span-4 lg:ml-12">
                     <h4 class="text-white font-bold mb-6 font-serif text-xl">Links Rápidos</h4>
                     <ul class="space-y-3 text-sm">
-                        <li><a href="#servicos" class="hover:text-brand-400 transition-colors">Meus Serviços</a></li>
-                        <li><a href="#depoimentos" class="hover:text-brand-400 transition-colors">Avaliações</a></li>
-                        <li><a href="#contato" class="hover:text-brand-400 transition-colors">Orçamento</a></li>
+                        <li><a href="#servicos" class="hover:text-brand-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-brand-500"></i> Meus Serviços</a></li>
+                        <li><a href="#depoimentos" class="hover:text-brand-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-brand-500"></i> Avaliações de Clientes</a></li>
+                        <li><a href="#contato" class="hover:text-brand-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-brand-500"></i> Solicitar Orçamento</a></li>
+                        <li><a href="#localizacao" class="hover:text-brand-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-xs text-brand-500"></i> Localização e Rota</a></li>
                     </ul>
                 </div>
                 
-                <div class="md:col-span-3">
+                <div class="md:col-span-4 lg:col-span-4">
                     <h4 class="text-white font-bold mb-6 font-serif text-xl">Contato</h4>
                     <ul class="space-y-4 text-sm">
-                        <li class="flex items-center gap-3">
-                            <i class="fa-brands fa-whatsapp text-brand-500 text-lg"></i>
-                            <a href="https://wa.me/5543984989845" class="hover:text-white transition-colors">(43) 98498-9845</a>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0 text-brand-400 mt-0.5">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-xs mb-1">Fale conosco</p>
+                                <a href="https://wa.me/5543984989845" class="hover:text-white transition-colors font-medium text-base">(43) 98498-9845</a>
+                            </div>
                         </li>
-                        <li class="flex items-center gap-3">
-                            <i class="fa-brands fa-instagram text-brand-500 text-lg"></i>
-                            <a href="https://www.instagram.com/cleo_costureira_2026/" class="hover:text-white transition-colors">@cleo_costureira_2026</a>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0 text-brand-400 mt-0.5">
+                                <i class="fa-solid fa-map-pin"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-xs mb-1">Endereço</p>
+                                <span class="leading-relaxed block">Rua David Nasser, 339<br>Conjunto Vivi Xavier<br>Londrina, PR</span>
+                            </div>
                         </li>
-                        <li class="flex items-start gap-3">
-                            <i class="fa-solid fa-map-pin text-brand-500 text-lg mt-0.5"></i>
-                            <span>Rua David Nasser, 339<br>Conjunto Vivi Xavier<br>Londrina, PR</span>
+                        <li class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center shrink-0 text-brand-400 mt-0.5">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-xs mb-1">Horário</p>
+                                <span class="leading-relaxed block">Seg - Sex: 08:30 às 17:00</span>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
             
-            <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
                 <p>&copy; <span id="year"></span> Cléo Costureira. Todos os direitos reservados.</p>
-                <p class="mt-2 md:mt-0">Design e Desenvolvimento Focado no Cliente.</p>
+                <p class="mt-3 md:mt-0">Design focado em SEO Local | Londrina - PR</p>
             </div>
         </div>
     </footer>
 
+    <!-- Botão Flutuante do WhatsApp -->
     <a href="https://wa.me/5543984989845?text=Olá%20Cléo!%20Vim%20pelo%20seu%20site%20e%20preciso%20falar%20com%20você." 
        target="_blank" 
-       class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-[1.25rem] flex items-center justify-center text-3xl shadow-[0_8px_30px_rgba(37,211,102,0.4)] hover:shadow-[0_12px_40px_rgba(37,211,102,0.6)] hover:-translate-y-2 transition-all z-50 animate-bounce"
-       style="animation-duration: 3s;"
+       class="fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-3xl shadow-xl hover:bg-[#20bd5a] hover:scale-110 transition-transform z-50 animate-bounce"
+       style="animation-duration: 2.5s;"
        aria-label="Chamar no WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
     <script>
+        // Preencher o ano dinamicamente no footer
         document.getElementById('year').textContent = new Date().getFullYear();
 
+        // Menu Mobile Toggle
         function toggleMenu() {
             const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+            if(menu.classList.contains('hidden')){
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
         }
 
+        // Lógica de Envio de Orçamento para o WhatsApp
         function enviarWhatsApp(e) {
             e.preventDefault();
             const nome = document.getElementById('nome').value;
@@ -491,151 +638,90 @@
             if (mensagem.trim() !== "") {
                 texto += `\nDetalhes:\n${mensagem}`;
             }
-            window.open(`https://wa.me/5543984989845?text=${encodeURIComponent(texto)}`, '_blank');
+            const textoCodificado = encodeURIComponent(texto);
+            window.open(`https://wa.me/5543984989845?text=${textoCodificado}`, '_blank');
         }
 
+        // Estilo de Navbar Dinâmico no Scroll
         window.addEventListener('scroll', () => {
             const header = document.getElementById('header');
-            if (window.scrollY > 20) {
+            if (window.scrollY > 10) {
                 header.classList.add('shadow-md');
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.classList.remove('py-3');
+                header.classList.add('py-2');
             } else {
                 header.classList.remove('shadow-md');
-                header.style.background = 'rgba(255, 255, 255, 0.85)';
+                header.classList.add('py-3');
+                header.classList.remove('py-2');
             }
         });
 
         // -------------------------------------------------------------
-        // INTEGRAÇÃO REAL-TIME (SCRAPING DO BACKEND)
+        // Lógica Inteligente: Traçar Rota via Localização do Usuário
         // -------------------------------------------------------------
-        const API_URL = 'https://cleocostureira.onrender.com';
+        function tracarRota() {
+            const statusLabel = document.getElementById('geo-status');
+            const loadingOverlay = document.getElementById('mapa-loading');
+            const iframeMapa = document.getElementById('google-map-iframe');
+            
+            // Coordenadas da Cléo Costureira
+            const destLat = -23.2796001;
+            const destLng = -51.1542749;
 
-        function updateStatusUI(isOpen) {
-            const container = document.getElementById('status-loja-container');
-            const dot = document.getElementById('status-dot');
-            const text = document.getElementById('status-text');
-
-            if (isOpen) {
-                container.className = "ml-8 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold bg-[#e8f5e9] text-[#2e7d32] border border-[#a5d6a7]";
-                dot.className = "w-2.5 h-2.5 rounded-full bg-[#4caf50] animate-pulse";
-                text.textContent = "Aberto Agora";
-            } else {
-                container.className = "ml-8 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold bg-[#ffebee] text-[#c62828] border border-[#ef9a9a]";
-                dot.className = "w-2.5 h-2.5 rounded-full bg-[#ef5350]";
-                text.textContent = "Fechado Agora";
+            if (!navigator.geolocation) {
+                statusLabel.textContent = "Seu navegador não suporta geolocalização.";
+                statusLabel.classList.add("text-red-500");
+                return;
             }
-        }
 
-        function setLocalBusinessHours() {
-            const now = new Date();
-            const formatterDay = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Sao_Paulo', weekday: 'short' });
-            const formatterHour = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Sao_Paulo', hour12: false, hour: 'numeric' });
-            const formatterMin = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Sao_Paulo', minute: 'numeric' });
+            statusLabel.textContent = "Solicitando permissão...";
+            statusLabel.classList.remove("text-red-500");
+            loadingOverlay.classList.remove('hidden');
+            loadingOverlay.classList.add('flex');
 
-            const dayString = formatterDay.format(now);
-            const hour = parseInt(formatterHour.format(now));
-            const minute = parseInt(formatterMin.format(now) || 0);
-
-            const currentTime = hour + (minute / 60);
-            const isWeekday = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'].includes(dayString);
-            
-            const isOpen = isWeekday && currentTime >= 8.5 && currentTime < 17;
-            updateStatusUI(isOpen);
-        }
-
-        async function fetchGoogleData() {
-            const reviewsContainer = document.getElementById('reviews-container');
-            
-            try {
-                const response = await fetch(`${API_URL}/api/google-data`);
-                if (!response.ok) throw new Error(`Erro na API: ${response.status}`);
-                const data = await response.json();
-                
-                // Horário de Funcionamento Local
-                setLocalBusinessHours();
-
-                // Textos de Nota/Avaliações
-                if(data.rating_geral && data.total_avaliacoes) {
-                    document.getElementById('hero-rating-text').textContent = `${data.rating_geral} no Google`;
-                    document.getElementById('subtitle-avaliacoes').textContent = `Nossa nota é ${data.rating_geral} baseada em ${data.total_avaliacoes} avaliações no Google Meu Negócio.`;
+            navigator.geolocation.getCurrentPosition(
+                // Sucesso
+                (position) => {
+                    const userLat = position.coords.latitude;
+                    const userLng = position.coords.longitude;
+                    
+                    // Monta a URL de "Directions" do Google Maps Embed API
+                    // Nota: O uso do /maps?saddr=... é um método clássico que substitui o frame para desenhar a rota diretamente
+                    const urlRota = `https://www.google.com/maps?saddr=${userLat},${userLng}&daddr=${destLat},${destLng}&output=embed`;
+                    
+                    // Atualiza o iframe
+                    iframeMapa.src = urlRota;
+                    
+                    statusLabel.textContent = "Rota traçada com sucesso!";
+                    statusLabel.classList.add("text-green-600");
+                    
+                    setTimeout(() => {
+                        loadingOverlay.classList.add('hidden');
+                        loadingOverlay.classList.remove('flex');
+                    }, 1000); // tempo pro mapa carregar
+                },
+                // Erro
+                (error) => {
+                    loadingOverlay.classList.add('hidden');
+                    loadingOverlay.classList.remove('flex');
+                    statusLabel.classList.add("text-red-500");
+                    switch(error.code) {
+                        case error.PERMISSION_DENIED:
+                            statusLabel.textContent = "Você negou a permissão de localização.";
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            statusLabel.textContent = "Informação de localização indisponível.";
+                            break;
+                        case error.TIMEOUT:
+                            statusLabel.textContent = "A requisição demorou muito e expirou.";
+                            break;
+                        default:
+                            statusLabel.textContent = "Ocorreu um erro desconhecido.";
+                            break;
+                    }
                 }
-                
-                // Renderiza Avaliações
-                if(data.reviews && data.reviews.length > 0) {
-                    reviewsContainer.innerHTML = '';
-                    data.reviews.slice(0, 3).forEach(review => {
-                        const inicial = review.author_name.charAt(0).toUpperCase();
-                        reviewsContainer.innerHTML += `
-                            <div class="bg-white/10 backdrop-blur-md border border-white/10 p-8 rounded-[2.5rem] hover:-translate-y-2 transition-transform duration-300 shadow-xl">
-                                <div class="flex items-center mb-6 gap-4">
-                                    <div class="w-14 h-14 bg-brand-500 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-inner">${inicial}</div>
-                                    <div>
-                                        <h4 class="font-bold text-lg">${review.author_name}</h4>
-                                        <div class="text-yellow-400 text-sm flex gap-1 mt-1">
-                                            ${Array(review.rating).fill('<i class="fa-solid fa-star"></i>').join('')}
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-gray-300 italic leading-relaxed text-lg">"${review.text}"</p>
-                            </div>
-                        `;
-                    });
-                }
-
-            } catch (error) {
-                console.error("Erro na busca de dados:", error);
-                setLocalBusinessHours();
-            }
+            );
         }
-
-        window.addEventListener('DOMContentLoaded', () => {
-            setTimeout(() => { fetchGoogleData(); }, 800);
-        });
-
-        // -------------------------------------------------------------
-        // MAPA DINÂMICO DE ROTA (GEOLOCALIZAÇÃO)
-        // -------------------------------------------------------------
-        function calcularRotaMapa() {
-            const loading = document.getElementById('loading-rota');
-            const iframe = document.getElementById('mapa-iframe');
-            const loadingText = document.getElementById('loading-text');
-            const loadingIcon = document.getElementById('loading-icon');
-            
-            loadingIcon.className = "fa-solid fa-spinner fa-spin text-4xl text-brand-600 mb-4";
-            loadingText.textContent = "Buscando sua localização...";
-            
-            if ("geolocation" in navigator) {
-                loading.classList.remove('hidden');
-                
-                navigator.geolocation.getCurrentPosition(
-                    function(position) {
-                        const lat = position.coords.latitude;
-                        const lng = position.coords.longitude;
-                        
-                        // Destino Cléo
-                        const destLat = -23.2796;
-                        const destLng = -51.1517;
-                        
-                        loadingText.textContent = "Desenhando o trajeto...";
-                        iframe.src = `https://maps.google.com/maps?saddr=${lat},${lng}&daddr=${destLat},${destLng}&output=embed`;
-                        
-                        setTimeout(() => { loading.classList.add('hidden'); }, 1500); 
-                    },
-                    function(error) {
-                        loadingIcon.className = "fa-solid fa-location-crosshairs text-4xl text-red-500 mb-4";
-                        loadingText.textContent = error.code === 1 ? "Para ver a rota, permita o acesso à localização." : "Não foi possível encontrar seu local agora.";
-                        setTimeout(() => { loading.classList.add('hidden'); }, 3500);
-                    },
-                    { enableHighAccuracy: true, timeout: 10000 }
-                );
-            } else {
-                loading.classList.remove('hidden');
-                loadingIcon.className = "fa-solid fa-triangle-exclamation text-4xl text-red-500 mb-4";
-                loadingText.textContent = "Seu celular/navegador não suporta mapa dinâmico.";
-                setTimeout(() => { loading.classList.add('hidden'); }, 3500);
-            }
-        }
-
     </script>
 </body>
 </html>
